@@ -1,0 +1,25 @@
+[2.153s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_teleop': PYTHONPATH=/home/diego/ros2_ws/build/turtlebot3_teleop/prefix_override:/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/turtlebot3_teleop/build --no-deps install_data
+[2.410s] running develop
+[2.560s] running egg_info
+[2.560s] creating turtlebot3_teleop.egg-info
+[2.560s] writing turtlebot3_teleop.egg-info/PKG-INFO
+[2.560s] writing dependency_links to turtlebot3_teleop.egg-info/dependency_links.txt
+[2.560s] writing entry points to turtlebot3_teleop.egg-info/entry_points.txt
+[2.561s] writing requirements to turtlebot3_teleop.egg-info/requires.txt
+[2.561s] writing top-level names to turtlebot3_teleop.egg-info/top_level.txt
+[2.561s] writing manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.605s] reading manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.605s] writing manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.646s] running build_ext
+[2.647s] Creating /home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/site.py
+[2.650s] Creating /home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3-teleop.egg-link (link to .)
+[2.651s] Installing teleop_keyboard script to /home/diego/ros2_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[2.652s] 
+[2.652s] Installed /home/diego/ros2_ws/build/turtlebot3_teleop
+[2.652s] running install_data
+[2.652s] creating /home/diego/ros2_ws/install/turtlebot3_teleop/share/ament_index
+[2.652s] creating /home/diego/ros2_ws/install/turtlebot3_teleop/share/ament_index/resource_index
+[2.652s] creating /home/diego/ros2_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[2.652s] copying resource/turtlebot3_teleop -> /home/diego/ros2_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[2.652s] copying package.xml -> /home/diego/ros2_ws/install/turtlebot3_teleop/share/turtlebot3_teleop
+[3.074s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_teleop' returned '0': PYTHONPATH=/home/diego/ros2_ws/build/turtlebot3_teleop/prefix_override:/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/turtlebot3_teleop/build --no-deps install_data

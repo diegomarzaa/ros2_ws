@@ -1,0 +1,27 @@
+[
+    {
+        "mov": "avanzar",
+        "vel": 0.5,
+        "tiempo": 2.20882511138916
+    },
+    {
+        "mov": "derecha",
+        "vel": 0.5,
+        "tiempo": 2.213886260986328
+    },
+    {
+        "mov": "izquierda",
+        "vel": 0.5,
+        "tiempo": 1.7943291664123535
+    },
+    {
+        "mov": "avanzar",
+        "vel": 0.5,
+        "tiempo": 0.7449963092803955
+    },
+    {
+        "mov": "retroceder",
+        "vel": 0.5,
+        "tiempo": 1.7933216094970703
+    }
+]

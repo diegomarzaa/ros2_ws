@@ -1,0 +1,9 @@
+source;share/guardado_movimientos_paquete/hook/pythonpath.ps1
+source;share/guardado_movimientos_paquete/hook/pythonpath.dsv
+source;share/guardado_movimientos_paquete/hook/pythonpath.sh
+source;share/guardado_movimientos_paquete/hook/ament_prefix_path.ps1
+source;share/guardado_movimientos_paquete/hook/ament_prefix_path.dsv
+source;share/guardado_movimientos_paquete/hook/ament_prefix_path.sh
+source;../../build/guardado_movimientos_paquete/share/guardado_movimientos_paquete/hook/pythonpath_develop.ps1
+source;../../build/guardado_movimientos_paquete/share/guardado_movimientos_paquete/hook/pythonpath_develop.dsv
+source;../../build/guardado_movimientos_paquete/share/guardado_movimientos_paquete/hook/pythonpath_develop.sh

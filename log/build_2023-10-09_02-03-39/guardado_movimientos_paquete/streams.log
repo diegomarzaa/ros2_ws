@@ -1,0 +1,25 @@
+[1.943s] Invoking command in '/home/diego/ros2_ws/build/guardado_movimientos_paquete': PYTHONPATH=/home/diego/ros2_ws/build/guardado_movimientos_paquete/prefix_override:/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/guardado_movimientos_paquete/build --no-deps install_data
+[2.183s] running develop
+[2.329s] running egg_info
+[2.329s] creating guardado_movimientos_paquete.egg-info
+[2.329s] writing guardado_movimientos_paquete.egg-info/PKG-INFO
+[2.331s] writing dependency_links to guardado_movimientos_paquete.egg-info/dependency_links.txt
+[2.331s] writing entry points to guardado_movimientos_paquete.egg-info/entry_points.txt
+[2.332s] writing requirements to guardado_movimientos_paquete.egg-info/requires.txt
+[2.332s] writing top-level names to guardado_movimientos_paquete.egg-info/top_level.txt
+[2.332s] writing manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+[2.377s] reading manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+[2.377s] writing manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+[2.433s] running build_ext
+[2.433s] Creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages/site.py
+[2.436s] Creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages/guardado-movimientos-paquete.egg-link (link to .)
+[2.437s] Installing guardado_movimientos script to /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/guardado_movimientos_paquete
+[2.438s] 
+[2.438s] Installed /home/diego/ros2_ws/build/guardado_movimientos_paquete
+[2.438s] running install_data
+[2.438s] creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/share/ament_index
+[2.438s] creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/share/ament_index/resource_index
+[2.438s] creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/share/ament_index/resource_index/packages
+[2.438s] copying resource/guardado_movimientos_paquete -> /home/diego/ros2_ws/install/guardado_movimientos_paquete/share/ament_index/resource_index/packages
+[2.438s] copying package.xml -> /home/diego/ros2_ws/install/guardado_movimientos_paquete/share/guardado_movimientos_paquete
+[2.724s] Invoked command in '/home/diego/ros2_ws/build/guardado_movimientos_paquete' returned '0': PYTHONPATH=/home/diego/ros2_ws/build/guardado_movimientos_paquete/prefix_override:/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/guardado_movimientos_paquete/build --no-deps install_data

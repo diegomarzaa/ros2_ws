@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+guardado_movimientos_paquete/__init__.py
+guardado_movimientos_paquete/guardado_movimientos.py
+guardado_movimientos_paquete.egg-info/PKG-INFO
+guardado_movimientos_paquete.egg-info/SOURCES.txt
+guardado_movimientos_paquete.egg-info/dependency_links.txt
+guardado_movimientos_paquete.egg-info/entry_points.txt
+guardado_movimientos_paquete.egg-info/requires.txt
+guardado_movimientos_paquete.egg-info/top_level.txt
+guardado_movimientos_paquete.egg-info/zip-safe
+resource/guardado_movimientos_paquete

@@ -1,0 +1,17 @@
+[1.764s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_teleop': PYTHONPATH=/home/diego/ros2_ws/build/turtlebot3_teleop/prefix_override:/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/turtlebot3_teleop/build --no-deps install_data
+[2.012s] running develop
+[2.044s] running egg_info
+[2.044s] writing turtlebot3_teleop.egg-info/PKG-INFO
+[2.045s] writing dependency_links to turtlebot3_teleop.egg-info/dependency_links.txt
+[2.045s] writing entry points to turtlebot3_teleop.egg-info/entry_points.txt
+[2.045s] writing requirements to turtlebot3_teleop.egg-info/requires.txt
+[2.045s] writing top-level names to turtlebot3_teleop.egg-info/top_level.txt
+[2.069s] reading manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.070s] writing manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.095s] running build_ext
+[2.095s] Creating /home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3-teleop.egg-link (link to .)
+[2.095s] Installing teleop_keyboard script to /home/diego/ros2_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[2.096s] 
+[2.096s] Installed /home/diego/ros2_ws/build/turtlebot3_teleop
+[2.096s] running install_data
+[2.302s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_teleop' returned '0': PYTHONPATH=/home/diego/ros2_ws/build/turtlebot3_teleop/prefix_override:/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/turtlebot3_teleop/build --no-deps install_data

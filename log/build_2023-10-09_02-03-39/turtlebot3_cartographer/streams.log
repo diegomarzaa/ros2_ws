@@ -1,0 +1,48 @@
+[0.783s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/diego/ros2_ws/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/diego/ros2_ws/install/turtlebot3_cartographer
+[1.661s] -- The C compiler identification is GNU 9.4.0
+[1.661s] -- The CXX compiler identification is GNU 9.4.0
+[1.661s] -- Check for working C compiler: /usr/bin/cc
+[1.662s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.662s] -- Detecting C compiler ABI info
+[1.665s] -- Detecting C compiler ABI info - done
+[1.666s] -- Detecting C compile features
+[1.667s] -- Detecting C compile features - done
+[1.667s] -- Check for working CXX compiler: /usr/bin/c++
+[1.667s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.667s] -- Detecting CXX compiler ABI info
+[1.667s] -- Detecting CXX compiler ABI info - done
+[1.667s] -- Detecting CXX compile features
+[1.668s] -- Detecting CXX compile features - done
+[1.668s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.668s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.668s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.668s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.668s] -- Configuring done
+[1.668s] -- Generating done
+[1.668s] -- Build files have been written to: /home/diego/ros2_ws/build/turtlebot3_cartographer
+[1.676s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/diego/ros2_ws/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/diego/ros2_ws/install/turtlebot3_cartographer
+[1.676s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/diego/ros2_ws/build/turtlebot3_cartographer -- -j12 -l12
+[1.711s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/diego/ros2_ws/build/turtlebot3_cartographer -- -j12 -l12
+[1.751s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/diego/ros2_ws/build/turtlebot3_cartographer
+[1.761s] -- Install configuration: ""
+[1.764s] -- Execute custom install script
+[1.765s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[1.780s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[1.789s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[1.802s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[1.816s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[1.825s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[1.836s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[1.846s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[1.857s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[1.868s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[1.876s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[1.886s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[1.895s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[1.904s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[1.914s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[1.922s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[1.933s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[1.944s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[1.955s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[1.973s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/diego/ros2_ws/build/turtlebot3_cartographer

@@ -1,0 +1,37 @@
+[
+    {
+        "mov": "avanzar",
+        "vel": 0.5,
+        "tiempo": 1.5385844707489014
+    },
+    {
+        "mov": "derecha",
+        "vel": 0.5,
+        "tiempo": 1.219102382659912
+    },
+    {
+        "mov": "retroceder",
+        "vel": 0.5,
+        "tiempo": 0.45586705207824707
+    },
+    {
+        "mov": "avanzar",
+        "vel": 0.5,
+        "tiempo": 0.970005989074707
+    },
+    {
+        "mov": "derecha",
+        "vel": 0.5,
+        "tiempo": 1.4439959526062012
+    },
+    {
+        "mov": "avanzar",
+        "vel": 0.5,
+        "tiempo": 1.5488200187683105
+    },
+    {
+        "mov": "retroceder",
+        "vel": 0.5,
+        "tiempo": 1.4143402576446533
+    }
+]

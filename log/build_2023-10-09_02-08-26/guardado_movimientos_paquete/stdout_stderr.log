@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing guardado_movimientos_paquete.egg-info/PKG-INFO
+writing dependency_links to guardado_movimientos_paquete.egg-info/dependency_links.txt
+writing entry points to guardado_movimientos_paquete.egg-info/entry_points.txt
+writing requirements to guardado_movimientos_paquete.egg-info/requires.txt
+writing top-level names to guardado_movimientos_paquete.egg-info/top_level.txt
+reading manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+writing manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages/guardado-movimientos-paquete.egg-link (link to .)
+Installing guardado_movimientos script to /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/guardado_movimientos_paquete
+
+Installed /home/diego/ros2_ws/build/guardado_movimientos_paquete
+running install_data

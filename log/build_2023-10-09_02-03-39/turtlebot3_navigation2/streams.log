@@ -1,0 +1,51 @@
+[0.653s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/diego/ros2_ws/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/diego/ros2_ws/install/turtlebot3_navigation2
+[1.536s] -- The C compiler identification is GNU 9.4.0
+[1.536s] -- The CXX compiler identification is GNU 9.4.0
+[1.536s] -- Check for working C compiler: /usr/bin/cc
+[1.536s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.536s] -- Detecting C compiler ABI info
+[1.536s] -- Detecting C compiler ABI info - done
+[1.536s] -- Detecting C compile features
+[1.536s] -- Detecting C compile features - done
+[1.536s] -- Check for working CXX compiler: /usr/bin/c++
+[1.536s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.536s] -- Detecting CXX compiler ABI info
+[1.536s] -- Detecting CXX compiler ABI info - done
+[1.536s] -- Detecting CXX compile features
+[1.537s] -- Detecting CXX compile features - done
+[1.537s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.537s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.540s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.540s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.540s] -- Configuring done
+[1.541s] -- Generating done
+[1.541s] -- Build files have been written to: /home/diego/ros2_ws/build/turtlebot3_navigation2
+[1.544s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/diego/ros2_ws/src/turtlebot3/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/diego/ros2_ws/install/turtlebot3_navigation2
+[1.545s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/diego/ros2_ws/build/turtlebot3_navigation2 -- -j12 -l12
+[1.570s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/diego/ros2_ws/build/turtlebot3_navigation2 -- -j12 -l12
+[1.610s] Invoking command in '/home/diego/ros2_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/diego/ros2_ws/build/turtlebot3_navigation2
+[1.623s] -- Install configuration: ""
+[1.624s] -- Execute custom install script
+[1.625s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[1.638s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.pgm
+[1.650s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.yaml
+[1.661s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[1.673s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[1.683s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[1.693s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[1.704s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[1.713s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[1.724s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[1.734s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[1.743s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[1.753s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[1.765s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[1.772s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[1.781s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[1.789s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[1.800s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[1.813s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[1.822s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[1.835s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[1.848s] -- Symlinking: /home/diego/ros2_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[2.123s] Invoked command in '/home/diego/ros2_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/ros2_ws/install/turtlebot3_teleop:/home/diego/ros2_ws/install/turtlebot3_example:/home/diego/ros2_ws/install/guardado_movimientos_paquete:/home/diego/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/diego/ros2_ws/install/examples_rclpy_minimal_service:/home/diego/ros2_ws/install/examples_rclpy_minimal_publisher:/home/diego/ros2_ws/install/examples_rclpy_minimal_client:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_server:/home/diego/ros2_ws/install/examples_rclpy_minimal_action_client:/home/diego/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/diego/ros2_ws/build/turtlebot3_navigation2

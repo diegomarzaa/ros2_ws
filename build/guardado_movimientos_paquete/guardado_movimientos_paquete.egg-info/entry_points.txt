@@ -1,0 +1,3 @@
+[console_scripts]
+guardado_movimientos = guardado_movimientos_paquete.guardado_movimientos:main
+

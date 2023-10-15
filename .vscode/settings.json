@@ -50,5 +50,6 @@
         "/home/diego/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages",
         "/home/diego/ros2_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
-    ]
+    ],
+    "cmake.configureOnOpen": false
 }

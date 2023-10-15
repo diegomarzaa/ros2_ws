@@ -1,0 +1,17 @@
+[1.829s] Invoking command in '/home/diego/ros2_ws/build/guardado_movimientos_paquete': PYTHONPATH=/home/diego/ros2_ws/build/guardado_movimientos_paquete/prefix_override:/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/guardado_movimientos_paquete/build --no-deps install_data
+[2.116s] running develop
+[2.127s] running egg_info
+[2.129s] writing guardado_movimientos_paquete.egg-info/PKG-INFO
+[2.131s] writing dependency_links to guardado_movimientos_paquete.egg-info/dependency_links.txt
+[2.131s] writing entry points to guardado_movimientos_paquete.egg-info/entry_points.txt
+[2.132s] writing requirements to guardado_movimientos_paquete.egg-info/requires.txt
+[2.133s] writing top-level names to guardado_movimientos_paquete.egg-info/top_level.txt
+[2.162s] reading manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+[2.162s] writing manifest file 'guardado_movimientos_paquete.egg-info/SOURCES.txt'
+[2.198s] running build_ext
+[2.198s] Creating /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages/guardado-movimientos-paquete.egg-link (link to .)
+[2.199s] Installing guardado_movimientos script to /home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/guardado_movimientos_paquete
+[2.199s] 
+[2.200s] Installed /home/diego/ros2_ws/build/guardado_movimientos_paquete
+[2.200s] running install_data
+[2.711s] Invoked command in '/home/diego/ros2_ws/build/guardado_movimientos_paquete' returned '0': PYTHONPATH=/home/diego/ros2_ws/build/guardado_movimientos_paquete/prefix_override:/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/diego/ros2_ws/build/guardado_movimientos_paquete/build --no-deps install_data

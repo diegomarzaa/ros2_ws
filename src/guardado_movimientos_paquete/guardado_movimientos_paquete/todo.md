@@ -1,0 +1,2 @@
+- AHora mismo solo se guardan los movimientos cuando se pulsa una tecla distinta de wasd, pero no cuando se pulsa una tecla de movimiento distinta de la actual
+- Tampoco se pueden mandar un movimiento y una rotacion a la vez

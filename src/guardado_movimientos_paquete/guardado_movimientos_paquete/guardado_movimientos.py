@@ -2,11 +2,12 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import time
-import argparse # Para poder leer argumentos desde la terminal (NO EN USO)
+
 import os
 import json
 import getch # ES NECESARIO INSTALAR ESTE PAQUETE: pip install keyboard
 
+velocity = 0.5
 
 class MoveRobotNode(Node):
     def __init__(self):
@@ -14,16 +15,11 @@ class MoveRobotNode(Node):
         self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
         self.movements = []
 
-    def avanzar(self, vel):
+    def mover(self, vel = 0.0, ang = 0.0):
         msg = Twist()
         msg.linear.x = vel
-        print(f'Robot avanzando a {vel} m/s')
-        self.publisher_.publish(msg)
-
-    def girar(self, vel):
-        msg = Twist()
-        msg.angular.z = vel
-        print(f'Robot girando a {vel} rad/s')
+        msg.angular.z = ang
+        print(f'Robot moviendose a {vel} m/s y girando a {ang} rad/s')
         self.publisher_.publish(msg)
 
     def detener(self):
@@ -33,128 +29,138 @@ class MoveRobotNode(Node):
         self.publisher_.publish(msg)
 
 
-def guardar_movimientos(filename, movements):
-    # Escribe los movimientos al archivo JSON
-    with open(filename, "w") as f:
-        f.write(json.dumps(movements, indent=4))
-
-def guardar_movimientos(filename, movements):
+def guardar_movimientos_fichero(filename, movements):
     # Escribe los movimientos al archivo JSON
     with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}", "w") as f:
         f.write(json.dumps(movements, indent=4))
 
-def cargar_movimientos(filename):
+def cargar_movimientos_fichero(filename):
     if os.path.exists(filename):
         with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}", "r") as f:
             return json.load(f)
     else:
         return []
+    
+
+def texto_a_movimiento(texto:str, velocity:float) -> tuple:
+    if texto == "avanzar":
+        return (velocity, 0.0)
+    elif texto == "retroceder":
+        return (-velocity, 0.0)
+    elif texto == "izquierda":
+        return (0.0, velocity)
+    elif texto == "derecha":
+        return (0.0, -velocity)
+    elif texto == "detener":
+        return (0.0, 0.0)
+    else:
+        raise Exception("Texto no reconocido")
+    
+
+def reproducir_movimientos(node, movimientos):
+    for movimiento in movimientos:
+        print(f"Reproduciendo movimiento: {movimiento}")
+        vel, ang = texto_a_movimiento(movimiento["mov"], movimiento["vel"])
+        node.mover(vel, ang)
+        time.sleep(movimiento["tiempo"])
+        node.detener()
+
+def crear_tupla_movimiento(velocity, movimiento_actual, start_time):
+    moviendo = start_time is not None
+    
+    if moviendo:
+        end_time = time.time()
+        tiempo = end_time - start_time
+        return (movimiento_actual, velocity, tiempo)
+    else:
+        return (movimiento_actual, velocity, 0.0)
+
+
+def guardar_1_movimiento(node, datos_movimiento: tuple):
+    mov = datos_movimiento[0]
+    vel = datos_movimiento[1]
+    tiempo = datos_movimiento[2]
+
+    print(f"Guardando movimiento: {mov}")
+    print(f"tiempo: {tiempo}")
+
+    node.movements.append({
+        "mov": mov,
+        "vel": vel,
+        "tiempo": tiempo
+    })
+    
+
+
+def control_teclado(node):
+    print("Presiona las teclas WASD para controlar el robot. Q para cancelar, Enter para guardar")
+    start_time = None # Variable to store the start time of a movement
+    movimiento_actual = None
+
+    while True: # Loop until Q is pressed
+
+        # Con esta podemos saber que movimiento se está realizando
+        key = getch.getch() # Get the pressed key
+        key_to_movement = {
+            'w': "avanzar",
+            's': "retroceder",
+            'a': "izquierda",
+            'd': "derecha",
+            ' ': "detener",
+        }
+
+        # AL PULSAR UNA TECLA:
+        # 1) Guardamos el movimiento anterior
+        
+        if movimiento_actual is not None:
+            datos_movimiento = crear_tupla_movimiento(velocity, movimiento_actual, start_time)
+            guardar_1_movimiento(node, datos_movimiento)
+            print(f"movimiento guardado: {datos_movimiento}")
+        
+        # 3) ACTUAR SEGÚN LA TECLA PULSADA
+
+        if key in key_to_movement:
+            movimiento_actual = key_to_movement[key]
+            start_time = time.time()
+            vel, ang = texto_a_movimiento(movimiento_actual, velocity)
+            node.mover(vel, ang)
+        
+        elif key == 'q':
+            print("Cancelando...")
+            break
+        
+        elif key == '\n':
+            print("Guardando movimientos...")
+            nombre_fichero = input("Introduce el nombre del fichero (sin el .json del final): ")
+            guardar_movimientos_fichero(f"{nombre_fichero}.json", node.movements)
+            break
+
+        else:
+            print("Tecla no reconocida")
+            continue
 
 
 def main(args=None):
 
+    # Inicializa el nodo
     rclpy.init(args=args)
     guardado_movimientos_node = MoveRobotNode()
     choice = "..."  # Temporal
 
     while choice != '':
-        choice = input("\nEscoge qué hacer: \n0: Normal input\n1: Input Saver\n2: Input Loader\nEnter: Quit\n")
-
-        # MOVIMIENTO NORMAL
-        if choice == '0':
-            try:
-                velocity = float(input("Introduce:\n- Velocidad (ej. 0.5)\n"))
-            except:
-                print("Entrada no válida")
-                continue
-            
-            guardado_movimientos_node.avanzar(velocity)
-            time.sleep(1)
-            guardado_movimientos_node.detener()
-            
+        # Muestra el menú y lee la opción elegida
+        choice = input("\nEscoge qué hacer: \n1: Mover con teclado\n2: Cargar movimientos\nEnter: Quit\n")
 
         # GUARDA LOS MOVIMIENTOS EN UN ARCHIVO JSON
-        elif choice == '1':
-            print("Presiona las teclas WASD para controlar el robot y Q para salir")
-            start_time = None # Variable to store the start time of a movement
-            end_time = None # Variable to store the end time of a movement
-            tiempo = None # Variable to store the duration of a movement
-            velocity = 0.5
-            tipo_movimiento = None
+        if choice == '1':
+            control_teclado(guardado_movimientos_node)
 
-            while True: # Loop until Q is pressed
-                
-                key = getch.getch() # Get the pressed key
-
-                if key == 'w':
-                    if start_time is None: # If this is the first movement, record the start time
-                        start_time = time.time()
-                    guardado_movimientos_node.avanzar(velocity)
-                    mov = "avanzar"
-                
-                elif key == 's':
-                    if start_time is None:
-                        start_time = time.time()
-                    guardado_movimientos_node.avanzar(-velocity)
-                    mov = "retroceder"
-                
-                elif key == 'a':
-                    if start_time is None:
-                        start_time = time.time()
-                    guardado_movimientos_node.girar(velocity)
-                    mov = "izquierda"
-                
-                elif key == 'd':
-                    if start_time is None:
-                        start_time = time.time()
-                    guardado_movimientos_node.girar(-velocity)
-                    mov = "derecha"
-                
-                elif key == 'q':
-                    break
-                
-                # No 
-                else:
-                    guardado_movimientos_node.detener()
-                    if start_time is not None:
-
-                        print(f"Guardando movimiento: {mov}")
-                        end_time = time.time()
-                        print(f"start_time: {start_time}")
-                        print(f"end_time: {end_time}")
-                        print(f"tiempo: {end_time - start_time}")
-                        tiempo = end_time - start_time
-                        
-                        guardado_movimientos_node.movements.append({
-                            "mov": mov,
-                            "vel": velocity,
-                            "tiempo": tiempo
-                        })
-                    start_time = None # Reset the start time for the next movement
-
-
-            guardar_movimientos("movimientos.json", guardado_movimientos_node.movements)
 
         # CARGA LOS MOVIMIENTOS DESDE UN ARCHIVO JSON
         elif choice == '2':
-            movimientos = cargar_movimientos("movimientos.json")
-            
-            for movimiento in movimientos:
-                if movimiento["mov"] == "avanzar":
-                    guardado_movimientos_node.avanzar(movimiento["vel"])
-                elif movimiento["mov"] == "retroceder":
-                    guardado_movimientos_node.avanzar(-movimiento["vel"])
-                elif movimiento["mov"] == "izquierda":
-                    guardado_movimientos_node.girar(movimiento["vel"])
-                elif movimiento["mov"] == "derecha":
-                    guardado_movimientos_node.girar(-movimiento["vel"])
-                else:
-                    print("Movimiento no reconocido")
-                    continue
-
-                print(f"Esperando {movimiento['tiempo']} segundos")
-                time.sleep(movimiento["tiempo"])
-                guardado_movimientos_node.detener()
+            nombre_fichero = input("Introduce el nombre del fichero (sin el .json del final): ")
+            movimientos = cargar_movimientos_fichero(f"{nombre_fichero}.json")
+            reproducir_movimientos(guardado_movimientos_node, movimientos)
 
     # SE HA PULSADO ENTER
     rclpy.shutdown()

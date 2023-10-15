@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/diego/ros2_ws/install/turtlesim/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/turtlebot3_teleop",
+        "/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/turtlebot3_example",
+        "/home/diego/ros2_ws/install/turtlebot3_example/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/install/turtlebot3_msgs/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/guardado_movimientos_paquete",
+        "/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/diego/ros2_ws/install/turtlesim/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/turtlebot3_teleop",
+        "/home/diego/ros2_ws/install/turtlebot3_teleop/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/turtlebot3_example",
+        "/home/diego/ros2_ws/install/turtlebot3_example/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/install/turtlebot3_msgs/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/build/guardado_movimientos_paquete",
+        "/home/diego/ros2_ws/install/guardado_movimientos_paquete/lib/python3.8/site-packages",
+        "/home/diego/ros2_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}

@@ -1,37 +1,42 @@
 [
     {
+        "mov": "retroceder",
+        "vel": 0.5,
+        "tiempo": 1.0142593383789062
+    },
+    {
+        "mov": "detener",
+        "vel": 0.5,
+        "tiempo": 3.397353410720825
+    },
+    {
         "mov": "avanzar",
         "vel": 0.5,
-        "tiempo": 1.5385844707489014
+        "tiempo": 1.1739342212677002
+    },
+    {
+        "mov": "detener",
+        "vel": 0.5,
+        "tiempo": 1.129054307937622
     },
     {
         "mov": "derecha",
         "vel": 0.5,
-        "tiempo": 1.219102382659912
+        "tiempo": 2.003302574157715
     },
     {
-        "mov": "retroceder",
+        "mov": "detener",
         "vel": 0.5,
-        "tiempo": 0.45586705207824707
-    },
-    {
-        "mov": "avanzar",
-        "vel": 0.5,
-        "tiempo": 0.970005989074707
-    },
-    {
-        "mov": "derecha",
-        "vel": 0.5,
-        "tiempo": 1.4439959526062012
+        "tiempo": 1.0441155433654785
     },
     {
         "mov": "avanzar",
         "vel": 0.5,
-        "tiempo": 1.5488200187683105
+        "tiempo": 0.5545227527618408
     },
     {
-        "mov": "retroceder",
+        "mov": "detener",
         "vel": 0.5,
-        "tiempo": 1.4143402576446533
+        "tiempo": 1.5990545749664307
     }
 ]

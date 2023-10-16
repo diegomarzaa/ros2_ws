@@ -1,2 +1,6 @@
-- AHora mismo solo se guardan los movimientos cuando se pulsa una tecla distinta de wasd, pero no cuando se pulsa una tecla de movimiento distinta de la actual
-- Tampoco se pueden mandar un movimiento y una rotacion a la vez
+- MANDAR MOV. Y ROT. A LA VEZ
+  - Que wasd lo que haga es aumentar la velocidad.
+  - Que no se cancele un movimiento si se pulsa otro (excepto el espacio), solo que se sumen.
+  - EJ: W+D = 0.5, 0.5,    S = 0, 0.5      D = 0, 1      W = 0.5, 1
+  - COMO HACER
+    - Que solo se guarde 

@@ -31,14 +31,23 @@ class MoveRobotNode(Node):
 
 def guardar_movimientos_fichero(filename, movements):
     # Escribe los movimientos al archivo JSON
-    with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}", "w") as f:
+    with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}.json", "w") as f:
         f.write(json.dumps(movements, indent=4))
 
 def cargar_movimientos_fichero(filename):
-    if os.path.exists(filename):
-        with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}", "r") as f:
-            return json.load(f)
+    path = os.path.dirname(os.path.abspath(__file__))
+    print(f"Path: {path}")
+
+    if os.path.exists(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}.json"):
+        print(f"Cargando movimientos desde {filename}.json")
+        try:
+            with open(f"src/guardado_movimientos_paquete/guardado_movimientos_paquete/{filename}.json", "r") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error al cargar el fichero {filename}.json", e)
+            return []
     else:
+        print(f"El fichero {filename}.json no existe")
         return []
     
 
@@ -97,7 +106,7 @@ def control_teclado(node):
     start_time = None # Variable to store the start time of a movement
     movimiento_actual = None
 
-    while True: # Loop until Q is pressed
+    while True:   # Loop hasta que se pulsa enter o q
 
         # Con esta podemos saber que movimiento se está realizando
         key = getch.getch() # Get the pressed key
@@ -132,7 +141,7 @@ def control_teclado(node):
         elif key == '\n':
             print("Guardando movimientos...")
             nombre_fichero = input("Introduce el nombre del fichero (sin el .json del final): ")
-            guardar_movimientos_fichero(f"{nombre_fichero}.json", node.movements)
+            guardar_movimientos_fichero(nombre_fichero, node.movements)
             break
 
         else:
@@ -159,7 +168,7 @@ def main(args=None):
         # CARGA LOS MOVIMIENTOS DESDE UN ARCHIVO JSON
         elif choice == '2':
             nombre_fichero = input("Introduce el nombre del fichero (sin el .json del final): ")
-            movimientos = cargar_movimientos_fichero(f"{nombre_fichero}.json")
+            movimientos = cargar_movimientos_fichero(nombre_fichero)
             reproducir_movimientos(guardado_movimientos_node, movimientos)
 
     # SE HA PULSADO ENTER
